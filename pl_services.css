@@ -1,0 +1,70 @@
+/*
+   Web Design Final Project
+   
+   Plumb Line Services Style Sheet
+   
+   Filename: pl_services.css
+
+*/
+
+
+/* Styles to be used in services page */
+
+h2 {
+	font-size: 1.8em;
+	color: #EFC776;
+	text-align: center;
+	padding: 10px;
+}
+
+/* Article Styles */
+
+article {
+   width: 90%;
+   margin: auto;
+}
+
+article section {
+   display: block;
+   float: left;
+   width: 30%;
+   margin: 5em 2.4em 2em auto;
+   background-color: #B9B4A9;
+   height: 550px;
+}
+
+article p {
+   line-height: 1.5;
+   font-size: 1em;
+   padding: 1em;
+   margin-bottom: -125px;
+}
+
+article section img{
+	width: 95%;
+}
+
+/* Form Styles */
+
+article section div{
+	display: block;
+	text-align: center;
+	width: 100%;
+	border: none;
+}
+
+.button {
+	background-color: #4D4542;
+	border: none;
+	color: #EFC776;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	margin: auto;
+}
+
+.button:hover{
+	cursor: pointer;
+}

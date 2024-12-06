@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/*
+   Web Design Final Project
+   
+   Plumb Line Layout Style Sheet
+   
+   Filename: pl_layout.css
+
+*/
+
+
+/* Basic styles to be used in every page */
+
+html {
+	height: 100%;
+	font-size: 14px;
+	background: #EFC776;
+	font-family: Verdana, Geneva, sans-serif;
+	height: 100%;
+}
+
+body {
+   background-color: white;
+   box-shadow: #9F7F3F 10px 0px 40px, #9F7F3F -10px 0px 40px;
+   margin: 0px auto;
+   min-width: 400px;
+   max-width: 1024px;   
+   width: 100%; 
+}
+
+article {
+	width: 73%;
+	float: left;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+article div{
+	margin-top: 10px;
+	width: 40%;
+	float: right;
+}
+
+article div img{
+	display: inline-block;
+	width: 80%;
+	margin: none;
+}
+
+article div button{
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	margin: auto;
+}
+
+body h1 {
+	margin: 1%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 1.5em;
+}
+
+body article h1 {
+	font-size: 1.15em;
+}
+
+body p, body address {
+	margin: 3.5% 1%;
+	font-size: 1em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-style: normal;
+	height: 100%;
+}
+
+article aside h1 {
+	display: none;
+}
+
+article p, article address {font-family: "Times New Roman", Times, serif;}
+
+h3{
+	margin: 35px;
+	background-color: #B9B4A9;
+	color: #9F7F3F;
+	padding: 25px;
+	width: 50%;
+}
+
+
+/* Header styles */
+
+header {
+   background: #B9B4A9; 
+   /*#B9B4A9 #EFC776 */
+}
+
+header img {
+	display: block;
+	width: 100%;
+}
+
+/* Navigation list styles */
+
+header nav ul {
+   width: 100%;
+}
+
+header nav ul li {
+   font-size: 1em;   
+}
+
+header nav ul li a {
+   color: white;
+   display: block;
+   padding: 5px 20px;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: rgb(11, 12, 145);
+}
+
+/* Footer styles */   
+
+footer {
+   clear: both;
+   color: white;    
+   background: linear-gradient(to bottom, #B9B4A9, rgb(41, 41, 41));
+   font-size: 0.7em;  
+   font-style: normal;
+   width: 100%;
+}
+
+
+footer section {
+   float: left;
+   padding: 5px 30px;
+   width: 100%;
+}
+
+footer a {
+   color: white;
+   text-decoration: none;
+}
+
+footer a:hover {
+   color: rgb(11, 12, 145);
+}
+
+footer::after {
+   display: table;
+   content: "";
+   clear: both;
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+    
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
+
+body p, body address {
+	margin: 3.5% 1%;
+	font-size: 1em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-style: normal;
+	height: 100%;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	margin-top: 4%;
+	border-top: 3px outset #B9B4A9;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: both;
+	padding-bottom: 10px;
+}
+
+
+/* =============================================
+	Tablet layout styles used by devices
+	481px to 768px and cascaded to larger 
+	devices.
+   =============================================
+*/
+
+
+@media only screen and (min-width: 481px) {
+html, body {
+	font-size: 16px;
+}
+
+header h1 {
+   font-size: 2.2em;
+}
+
+body article h1 {
+   font-size: 1.75em;
+}
+
+article {
+	width: 94%;
+	float: none;
+	margin: 0px 10px;
+}
+dl#ct_locations {
+	width: 57%;
+	margin: 0px 0px 0px 20px;
+}
+dl {
+	width: 90%;
+    margin: 0 auto;
+	text-align: left;
+}
+article img {
+	float: right;
+	width: 40%;
+	margin: 0% 2% 2% 2%;
+}
+
+article ul {
+	margin-top: -20px;
+}
+
+article aside {
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 1%;
+	border: 1px solid rgb(251, 151, 151);
+	width: 35%;
+	font-size: 0.9em;
+	background-color: #ffdcdb;
+}
+
+article aside h1 {
+	display: block;
+	font-size: 1em;
+	text-align: center;
+	border-bottom: 1px solid rgb(111, 111, 111);
+}
+
+footer {
+	font-size: 0.9em;
+}
+}

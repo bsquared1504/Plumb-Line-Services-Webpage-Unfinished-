@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+	Web Design Final Project
+	
+    Plumb Line Services Home Page
+    Author: Brady Brown
+    Date: 4/22/24
+
+    Filename: pl_index.html
+	FOR ME: CONTACT FORM TO FILL OUT
+   -->   
+
+	<title>Plumb Line Contact</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="pl_base.css"/>
+	<link rel="stylesheet" href="pl_layout.css"/>
+	<link rel="stylesheet" href="pl_contact.css"/>
+	<script src="pl_services.js" async></script>
+	<script src="pl_contact.js" async></script>
+</head>
+
+<body>
+	<header>
+		<a href="pl_index.html"><img src="pl_header2.png" alt="Plumb Line Services" /></a>
+		<nav> 
+			<ul>
+				<li><a href="pl_index.html">Home</a></li>
+				<li><a href="pl_services.html">Services</a></li>
+				<li><a href="pl_projects.html">Projects</a></li>
+				<li><a href="pl_about.html">About</a></li>
+				<li><a href="pl_contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="paySection">
+	      <form id="contact" name="contact" method="post" action="pl_temp.html">         
+         <fieldset id="creditcard">
+            <legend>Please Enter Your Information</legend>
+
+            <label for="cardName">Name*</label>
+            <input name="cardName" id="cardName" required type="text" />      
+			
+			<label for="email">Email*</label>
+			<input name="email" id="email" required type="text" />
+			
+			<label for="phone">Phone*</label>
+			<input name="phone" id="phone" required type="text" />
+			
+			<fieldset id="workType">
+               <label class="workLabel">Type of Work*</label>
+               <label class="workLabel">
+                  <input name="work" value="new" type="radio" required />
+                  <p>New Construction Windows and Doors</p>
+               </label>
+               <label class="workLabel">               
+                  <input name="work" value="replace" type="radio" />
+                  <p>Window and Door Replacement</p>
+               </label>
+               <label class="workLabel">                  
+                  <input name="work" value="misc" type="radio"  />
+                  <p>Miscellaneous Work</p>
+               </label>
+            </fieldset>			
+
+         <p id="footnote">* - Required Item</p>        
+         <input type="submit" id="subButton" value="Submit Information" />         
+      </form>
+	</section>
+	<footer>
+      <section>
+         Phone: <a href="tel:+14176892103">(417) 689-2103</a>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         E-mail: <a href="mailto:plumblinechad@yahoo.com">plumblinechad@yahoo.com</a>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         Facebook: <a href="https://www.facebook.com/PlumbLineServicesLLC/">/PlumbLineServicesLLC</a>
+      </section>      
+   </footer>
+</body>
+</html>
+
